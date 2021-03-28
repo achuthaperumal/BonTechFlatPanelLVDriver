@@ -28,7 +28,7 @@
 			<Item Name="ImageCaptureDLL.dll" Type="Document" URL="../lib/ImageCaptureDLL.dll"/>
 			<Item Name="ImageCaptureDLL.lib" Type="Document" URL="../lib/ImageCaptureDLL.lib"/>
 		</Item>
-		<Item Name="BonTechDetector.lvlib" Type="Library" URL="../code/BonTechDetector.lvlib"/>
+		<Item Name="imgAcquisiotn.lvlib" Type="Library" URL="../code/imgAcquisiotn.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
@@ -60,7 +60,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{8C6B1906-3307-4CF9-B8CB-A8201E87901A}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/BonTechDetector.lvlib</Property>
+				<Property Name="Source[1].itemID" Type="Ref"></Property>
 				<Property Name="Source[1].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[1].Library.atomicCopy" Type="Bool">true</Property>
 				<Property Name="Source[1].Library.LVLIBPtopLevel" Type="Bool">true</Property>
