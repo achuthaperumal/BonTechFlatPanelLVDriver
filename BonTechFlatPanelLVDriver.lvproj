@@ -13,47 +13,67 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="docs" Type="Folder">
-			<Item Name="SDK User Manual.pdf" Type="Document" URL="../docs/SDK User Manual.pdf"/>
-		</Item>
-		<Item Name="lib" Type="Folder">
-			<Item Name="A_Cal" Type="Folder"/>
-			<Item Name="A_Data" Type="Folder">
-				<Item Name="ImageCapture.ini" Type="Document" URL="../lib/A_Data/ImageCapture.ini"/>
-				<Item Name="ImageCapture_avg.ini" Type="Document" URL="../lib/A_Data/ImageCapture_avg.ini"/>
-				<Item Name="ImageCapture_bin.ini" Type="Document" URL="../lib/A_Data/ImageCapture_bin.ini"/>
-				<Item Name="ImageCapture_con.ini" Type="Document" URL="../lib/A_Data/ImageCapture_con.ini"/>
+		<Item Name="Sample" Type="Folder">
+			<Item Name="Controls" Type="Folder">
+				<Item Name="Test Driver States.ctl" Type="VI" URL="../Sample/Controls/Test Driver States.ctl"/>
 			</Item>
-			<Item Name="CalibrationDLL.lib" Type="Document" URL="../lib/CalibrationDLL.lib"/>
-			<Item Name="CalibrationDllEx.h" Type="Document" URL="../lib/CalibrationDllEx.h"/>
-			<Item Name="ImageCAPDllEx.h" Type="Document" URL="../lib/ImageCAPDllEx.h"/>
-			<Item Name="ImageCaptureDLL.dll" Type="Document" URL="../lib/ImageCaptureDLL.dll"/>
-			<Item Name="ImageCaptureDLL.lib" Type="Document" URL="../lib/ImageCaptureDLL.lib"/>
+			<Item Name="Test Driver.vi" Type="VI" URL="../Sample/Test Driver.vi"/>
 		</Item>
-		<Item Name="imgAcquisition.lvlib" Type="Library" URL="../code/imgAcquisition/imgAcquisition.lvlib"/>
-		<Item Name="imgCalibration.lvlib" Type="Library" URL="../code/imgCalibration/imgCalibration.lvlib"/>
+		<Item Name="BonTechDetector.lvlibp" Type="LVLibp" URL="../builds/BonTechDetector.lvlibp">
+			<Item Name="subvi" Type="Folder">
+				<Item Name="Error Converter (ErrCode or Status).vi" Type="VI" URL="../builds/BonTechDetector.lvlibp/subvi/Error Converter (ErrCode or Status).vi"/>
+				<Item Name="lpString to lvString.vi" Type="VI" URL="../builds/BonTechDetector.lvlibp/subvi/lpString to lvString.vi"/>
+				<Item Name="lvString to lpString.vi" Type="VI" URL="../builds/BonTechDetector.lvlibp/subvi/lvString to lpString.vi"/>
+			</Item>
+			<Item Name="Acquisition Commands.ctl" Type="VI" URL="../builds/BonTechDetector.lvlibp/Controls/Acquisition Commands.ctl"/>
+			<Item Name="Acquisition Modes.ctl" Type="VI" URL="../builds/BonTechDetector.lvlibp/Controls/Acquisition Modes.ctl"/>
+			<Item Name="BonTechWrapperLibrary.dll" Type="Document" URL="../builds/BonTechWrapperLibrary.dll"/>
+			<Item Name="Cancel Single Image Capture.vi" Type="VI" URL="../builds/BonTechDetector.lvlibp/VIs/Cancel Single Image Capture.vi"/>
+			<Item Name="Capture Single Image.vi" Type="VI" URL="../builds/BonTechDetector.lvlibp/VIs/Capture Single Image.vi"/>
+			<Item Name="Connect.vi" Type="VI" URL="../builds/BonTechDetector.lvlibp/VIs/Connect.vi"/>
+			<Item Name="Disconnect.vi" Type="VI" URL="../builds/BonTechDetector.lvlibp/VIs/Disconnect.vi"/>
+			<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="../builds/BonTechDetector.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Cluster From Error Code.vi"/>
+			<Item Name="Get Frame Size.vi" Type="VI" URL="../builds/BonTechDetector.lvlibp/VIs/Get Frame Size.vi"/>
+			<Item Name="Get Serial Number.vi" Type="VI" URL="../builds/BonTechDetector.lvlibp/VIs/Get Serial Number.vi"/>
+			<Item Name="Send Capture Command.vi" Type="VI" URL="../builds/BonTechDetector.lvlibp/VIs/Send Capture Command.vi"/>
+			<Item Name="Set Acquisition Mode.vi" Type="VI" URL="../builds/BonTechDetector.lvlibp/VIs/Set Acquisition Mode.vi"/>
+			<Item Name="Start Continuous Acquisition.vi" Type="VI" URL="../builds/BonTechDetector.lvlibp/VIs/Start Continuous Acquisition.vi"/>
+			<Item Name="Stop Continuous Acquisition.vi" Type="VI" URL="../builds/BonTechDetector.lvlibp/VIs/Stop Continuous Acquisition.vi"/>
+		</Item>
+		<Item Name="readRawFile.vi" Type="VI" URL="../Sample/readRawFile.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
-				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
+				<Item Name="Image Type" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Image Type"/>
+				<Item Name="IMAQ ArrayToImage" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ ArrayToImage"/>
+				<Item Name="IMAQ Create" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ Create"/>
+				<Item Name="IMAQ Dispose" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ Dispose"/>
+				<Item Name="IMAQ Image.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/IMAQ Image.ctl"/>
+				<Item Name="NI_Vision_Development_Module.lvlib" Type="Library" URL="/&lt;vilib&gt;/vision/NI_Vision_Development_Module.lvlib"/>
 			</Item>
-			<Item Name="CalibrationDLL.dll" Type="Document" URL="../lib/CalibrationDLL.dll"/>
-			<Item Name="ImageCaptureDLL.dll" Type="Document" URL="../code/lib/ImageCaptureDLL.dll"/>
+			<Item Name="Acquisition Commands.ctl" Type="VI" URL="../LabVIEW Library/Controls/Acquisition Commands.ctl"/>
+			<Item Name="Acquisition Modes.ctl" Type="VI" URL="../LabVIEW Library/Controls/Acquisition Modes.ctl"/>
+			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
-			<Item Name="imgAcquisition" Type="Packed Library">
+			<Item Name="BonTech Detector" Type="Packed Library">
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
-				<Property Name="Bld_buildCacheID" Type="Str">{501BB13C-E9B4-4BCF-963D-224BFFB340E4}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">imgAcquisition</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{1B050F60-EF93-4057-944F-2C7BA5157BBF}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">BonTech Detector</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_localDestDir" Type="Path">../builds</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="Bld_previewCacheID" Type="Str">{36C95F27-F42B-422C-88E1-108E0C67F7BA}</Property>
-				<Property Name="Bld_version.build" Type="Int">4</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{793EDA3F-147A-494B-A2D4-6BD2543C396C}</Property>
+				<Property Name="Bld_version.build" Type="Int">2</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">imgAcquisition.lvlibp</Property>
-				<Property Name="Destination[0].path" Type="Path">../builds/imgAcquisition.lvlibp</Property>
+				<Property Name="Destination[0].destName" Type="Str">BonTechDetector.lvlibp</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/BonTechDetector.lvlibp</Property>
 				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
@@ -62,30 +82,67 @@
 				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{7C66BB52-2B24-4A98-83CA-79E5A4FE31B0}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{B034492E-F984-4CF3-BF29-039B908CEC87}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
-				<Property Name="Source[1].Container.applyInclusion" Type="Bool">true</Property>
-				<Property Name="Source[1].Container.depDestIndex" Type="Int">0</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/lib</Property>
-				<Property Name="Source[1].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[1].type" Type="Str">Container</Property>
-				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref"></Property>
-				<Property Name="Source[2].Library.allowMissingMembers" Type="Bool">true</Property>
-				<Property Name="Source[2].Library.atomicCopy" Type="Bool">true</Property>
-				<Property Name="Source[2].Library.LVLIBPtopLevel" Type="Bool">true</Property>
-				<Property Name="Source[2].preventRename" Type="Bool">true</Property>
-				<Property Name="Source[2].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[2].type" Type="Str">Library</Property>
-				<Property Name="SourceCount" Type="Int">3</Property>
+				<Property Name="Source[1].itemID" Type="Ref"></Property>
+				<Property Name="Source[1].Library.allowMissingMembers" Type="Bool">true</Property>
+				<Property Name="Source[1].Library.atomicCopy" Type="Bool">true</Property>
+				<Property Name="Source[1].Library.LVLIBPtopLevel" Type="Bool">true</Property>
+				<Property Name="Source[1].preventRename" Type="Bool">true</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">Library</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_companyName" Type="Str">Mechmet Engineers</Property>
 				<Property Name="TgtF_enableDebugging" Type="Bool">true</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">imgAcquisition</Property>
-				<Property Name="TgtF_internalName" Type="Str">imgAcquisition</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2021 </Property>
-				<Property Name="TgtF_productName" Type="Str">imgAcquisition</Property>
-				<Property Name="TgtF_targetfileGUID" Type="Str">{37AAB19E-5DB7-4220-827F-EB0550C7FB60}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">imgAcquisition.lvlibp</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">BonTech Detector</Property>
+				<Property Name="TgtF_internalName" Type="Str">BonTech Detector</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2021 Mechmet Engineers</Property>
+				<Property Name="TgtF_productName" Type="Str">BonTech Detector</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{AECADC37-AA77-44E1-94A8-FCFA50AF12BB}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">BonTechDetector.lvlibp</Property>
+				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
+			</Item>
+			<Item Name="Test Driver" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{A4BDB015-23F7-4540-982C-40B3696221D5}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{E6F0A6A5-6B5A-4B69-9ABF-6ED959458741}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{9D7E67E2-4E6F-4538-AE72-FC1D1BEC8D6C}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Test Driver</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/Executable</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{37008A44-1474-417F-85F4-AF26369C14B5}</Property>
+				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">Test Driver.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/Executable/Test Driver.exe</Property>
+				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/Executable/data</Property>
+				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{3F3DEAB0-DCFC-4F0E-92AB-2B6560BD4CDC}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Sample/Test Driver.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_companyName" Type="Str">Mechmet Engineers</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Test Driver</Property>
+				<Property Name="TgtF_internalName" Type="Str">Test Driver</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2021 Mechmet Engineers</Property>
+				<Property Name="TgtF_productName" Type="Str">Test Driver</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{553EBC59-108A-4AD6-85A0-CE999015651C}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">Test Driver.exe</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
 		</Item>
