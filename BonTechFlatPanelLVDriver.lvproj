@@ -17,41 +17,20 @@
 			<Item Name="Controls" Type="Folder">
 				<Item Name="Test Driver States.ctl" Type="VI" URL="../Sample/Controls/Test Driver States.ctl"/>
 			</Item>
-			<Item Name="Test Driver.vi" Type="VI" URL="../Sample/Test Driver.vi"/>
 		</Item>
-		<Item Name="BonTechDetector.lvlibp" Type="LVLibp" URL="../builds/BonTechDetector.lvlibp">
-			<Item Name="subvi" Type="Folder">
-				<Item Name="Error Converter (ErrCode or Status).vi" Type="VI" URL="../builds/BonTechDetector.lvlibp/subvi/Error Converter (ErrCode or Status).vi"/>
-				<Item Name="lpString to lvString.vi" Type="VI" URL="../builds/BonTechDetector.lvlibp/subvi/lpString to lvString.vi"/>
-				<Item Name="lvString to lpString.vi" Type="VI" URL="../builds/BonTechDetector.lvlibp/subvi/lvString to lpString.vi"/>
-			</Item>
-			<Item Name="Acquisition Commands.ctl" Type="VI" URL="../builds/BonTechDetector.lvlibp/Controls/Acquisition Commands.ctl"/>
-			<Item Name="Acquisition Modes.ctl" Type="VI" URL="../builds/BonTechDetector.lvlibp/Controls/Acquisition Modes.ctl"/>
-			<Item Name="BonTechWrapperLibrary.dll" Type="Document" URL="../builds/BonTechWrapperLibrary.dll"/>
-			<Item Name="Cancel Single Image Capture.vi" Type="VI" URL="../builds/BonTechDetector.lvlibp/VIs/Cancel Single Image Capture.vi"/>
-			<Item Name="Capture Single Image.vi" Type="VI" URL="../builds/BonTechDetector.lvlibp/VIs/Capture Single Image.vi"/>
-			<Item Name="Connect.vi" Type="VI" URL="../builds/BonTechDetector.lvlibp/VIs/Connect.vi"/>
-			<Item Name="Disconnect.vi" Type="VI" URL="../builds/BonTechDetector.lvlibp/VIs/Disconnect.vi"/>
-			<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="../builds/BonTechDetector.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Cluster From Error Code.vi"/>
-			<Item Name="Get Frame Size.vi" Type="VI" URL="../builds/BonTechDetector.lvlibp/VIs/Get Frame Size.vi"/>
-			<Item Name="Get Serial Number.vi" Type="VI" URL="../builds/BonTechDetector.lvlibp/VIs/Get Serial Number.vi"/>
-			<Item Name="Send Capture Command.vi" Type="VI" URL="../builds/BonTechDetector.lvlibp/VIs/Send Capture Command.vi"/>
-			<Item Name="Set Acquisition Mode.vi" Type="VI" URL="../builds/BonTechDetector.lvlibp/VIs/Set Acquisition Mode.vi"/>
-			<Item Name="Start Continuous Acquisition.vi" Type="VI" URL="../builds/BonTechDetector.lvlibp/VIs/Start Continuous Acquisition.vi"/>
-			<Item Name="Stop Continuous Acquisition.vi" Type="VI" URL="../builds/BonTechDetector.lvlibp/VIs/Stop Continuous Acquisition.vi"/>
-		</Item>
+		<Item Name="BonTechDetector.lvlib" Type="Library" URL="../LabVIEW Library/BonTechDetector.lvlib"/>
+		<Item Name="BonTechWrapperLibrary.dll" Type="Document" URL="../LabVIEW Library/BonTechWrapperLibrary.dll"/>
 		<Item Name="readRawFile.vi" Type="VI" URL="../Sample/readRawFile.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
+				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="Image Type" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Image Type"/>
 				<Item Name="IMAQ ArrayToImage" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ ArrayToImage"/>
 				<Item Name="IMAQ Create" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ Create"/>
-				<Item Name="IMAQ Dispose" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ Dispose"/>
+				<Item Name="IMAQ Image Bit Depth" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ Image Bit Depth"/>
 				<Item Name="IMAQ Image.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/IMAQ Image.ctl"/>
 				<Item Name="NI_Vision_Development_Module.lvlib" Type="Library" URL="/&lt;vilib&gt;/vision/NI_Vision_Development_Module.lvlib"/>
 			</Item>
-			<Item Name="Acquisition Commands.ctl" Type="VI" URL="../LabVIEW Library/Controls/Acquisition Commands.ctl"/>
-			<Item Name="Acquisition Modes.ctl" Type="VI" URL="../LabVIEW Library/Controls/Acquisition Modes.ctl"/>
 			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -70,7 +49,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{793EDA3F-147A-494B-A2D4-6BD2543C396C}</Property>
-				<Property Name="Bld_version.build" Type="Int">2</Property>
+				<Property Name="Bld_version.build" Type="Int">4</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">BonTechDetector.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/BonTechDetector.lvlibp</Property>
@@ -82,10 +61,10 @@
 				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{B034492E-F984-4CF3-BF29-039B908CEC87}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{99A93E64-CD4A-4842-B991-9B4DFD1BAC03}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref"></Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/BonTechDetector.lvlib</Property>
 				<Property Name="Source[1].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[1].Library.atomicCopy" Type="Bool">true</Property>
 				<Property Name="Source[1].Library.LVLIBPtopLevel" Type="Bool">true</Property>
@@ -132,7 +111,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{3F3DEAB0-DCFC-4F0E-92AB-2B6560BD4CDC}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Sample/Test Driver.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref"></Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
