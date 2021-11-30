@@ -1,5 +1,4 @@
 # Libraries
-*.lvlibp
 *.llb
 
 # Shared objects (inc. Windows DLLs)
@@ -15,3 +14,5 @@
 *.aliases
 *.lvlps
 .cache/
+*.zip
+builds/
